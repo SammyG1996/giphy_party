@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>Giphy Party!</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -12,37 +13,32 @@
   <nav class="navbar navbar-dark bg-secondary">
     <div class="container-fluid">
       <a class="navbar-brand">Giphy Party</a>
+      <span>Powered By Giphy.com</span>
     </div>
   </nav>
 
-  <div class="row justify-content-center">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      
+        <div class="col-12 col-md-10 col-lg-8 m-3">  
+          
+          <form class="d-flex">
+          <input class="form-control me-2 " id="search" type="search" placeholder="Search for a gif..." aria-label="Search" autocomplete="off">
+          <button class="btn btn-primary mx-1" id="searchBtn">Search</button>
+          <button class="btn btn-danger mx-1" type="remove" id="remove">Remove</button>
+        </form>
+        
+      </div>
     
-    <div class="col-11 col-md-10 col-lg-8 m-3" d-flex>   
-      <form class="d-flex">
-      <input class="form-control me-2 " id="search" type="search" placeholder="Search for a gif..." aria-label="Search" autocomplete="off">
-      <button class="btn btn-primary mx-1" id="searchBtn">Search</button>
-      <button class="btn btn-danger mx-1" type="remove" id="remove">Remove</button>
-    </form>
-    
-  </div>
-  
-  </div>
+    </div>
+
+</div>
 
   <div class="container" >
 
-    <div class="row justify-content-center" style="height: 100vh" id="imgs"></div>
+    <div class="row justify-content-center" id="imgs"></div>
 
   </div>
-
-  
-  <footer class="bg-light text-center text-lg-center align-bottom">
-    <!-- Copyright -->
-    <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2);">
-      Powered By: 
-      <a class="text-dark" href="https://giphy.com/">Giphy.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
   
 
   
